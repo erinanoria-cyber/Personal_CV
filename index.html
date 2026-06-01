@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://fonts.googleapis.com; img-src 'self' https: data:; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdn.jsdelivr.net;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="description" content="CV Ahmad Rizki - Linux System Administrator & Cybersecurity Enthusiast">
+    <title>AR.DEV - Ahmad Irgi Dzakirah | Linux Admin & Cybersecurity</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/nunito@5.1.0/400.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/nunito@5.1.0/600.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/nunito@5.1.0/700.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/nunito@5.1.0/800.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="bg-shapes-container">
+        <div class="bg-shape bg-shape-1"></div>
+        <div class="bg-shape bg-shape-2"></div>
+        <div class="bg-shape bg-shape-3"></div>
+        <div class="bg-shape bg-shape-4"></div>
+        <div class="bg-shape bg-shape-5"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <span class="brand-green">AR</span><span class="brand-white">.DEV</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-1">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pengalaman">Pengalaman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyek">Proyek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+                <div class="ms-lg-3 mt-2 mt-lg-0">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="bi bi-sun-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-radial"></div>
+        <canvas id="particles-canvas"></canvas>
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100 py-5">
+                <div class="col-lg-7 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="800">
+                    <div class="hero-badge">
+                        <i class="bi bi-shield-lock"></i>
+                        Passionate about securing and optimizing Linux-based infrastructure
+                    </div>
+                    <h1 class="hero-name">Ahmad Irgi Dzakirah</h1>
+                    <p class="hero-title">Linux System Administrator & Cybersecurity Enthusiast</p>
+
+                    <div class="hero-contact-item">
+                        <i class="bi bi-envelope"></i>
+                        <a href="mailto:ahmad.irgi@email.com">ahmad.irgi@email.com</a>
+                    </div>
+                    <div class="hero-contact-item">
+                        <i class="bi bi-telephone"></i>
+                        <a href="tel:+6281234567890">+62 812-3456-9999</a>
+                    </div>
+                    <div class="hero-contact-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>Banten, Indonesia</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#" class="btn-primary-custom" onclick="alert('CV Download akan tersedia!')">
+                            <i class="bi bi-download"></i> Download CV
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-outline-custom">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-outline-custom">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2 d-flex justify-content-center mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-container">
+                            <div class="hero-image-ring"></div>
+                            <div class="hero-image-ring-2"></div>
+                            <div class="hero-avatar">
+                                <img src="profil.jpg" alt="Ahmad Irgi Dzakirah - Profile Picture" class="profile-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-absolute bottom-0 start-50 translate-middle-x pb-4" style="animation: bounce 2s infinite; z-index: 3;">
+            <a href="#tentang" class="text-decoration-none" style="color: var(--accent-green);">
+                <i class="bi bi-chevron-double-down fs-4"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="tentang">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Tentang Saya</h2>
+            <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                <p class="about-text">
+                    Saya adalah seorang IT Enthusiast yang berfokus pada administrasi sistem Linux dan keamanan siber. Memiliki pemahaman tentang infrastruktur server, automasi sistem, dan praktik keamanan cyber. Berdedikasi untuk terus belajar dan mengikuti perkembangan terbaru dalam teknologi keamanan informasi. Serta memiliki antusiasme dalam mempelajari perkembangan AI.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle"></i>
+                        <span>1+ tahun pengalaman dalam administrasi sistem Linux</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle"></i>
+                        <span>Sertifikasi keamanan siber tingkat pemula</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle"></i>
+                        <span>Berpengalaman dengan beberapa distribusi Linux (Debian\Ubuntu, Fedora, Mint, dll)</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle"></i>
+                        <span>Passionate tentang security hardening dan AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="keahlian" class="section-bg-animation">
+        <div class="section-particles">
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Keahlian Teknis</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">Kompetensi teknis dalam Linux Administration & Cybersecurity</p>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon linux"><i class="bi bi-terminal"></i></div>
+                            <h3>Linux Administration</h3>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Ubuntu/Debian</span><span class="skill-percent green">75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill green" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Shell Scripting (Bash)</span><span class="skill-percent green">70%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill green" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">System Monitoring</span><span class="skill-percent green">65%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill green" data-width="65"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Docker & Containerization</span><span class="skill-percent green">50%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill green" data-width="50"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Hermes Agent/Openclaw</span><span class="skill-percent green">45%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill green" data-width="45"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <div class="skill-card">
+                        <div class="skill-card-header">
+                            <div class="skill-icon cyber"><i class="bi bi-shield-check"></i></div>
+                            <h3>Cybersecurity</h3>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Network Security</span><span class="skill-percent orange">70%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill orange" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Vulnerability Assessment</span><span class="skill-percent orange">50%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill orange" data-width="50"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Firewall Configuration (iptables, UFW)</span><span class="skill-percent orange">75%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill orange" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Security Auditing</span><span class="skill-percent orange">50%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill orange" data-width="50"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">Penetration Testing Basics</span><span class="skill-percent orange">55%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill orange" data-width="55"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span class="skill-name">SIEM Tools</span><span class="skill-percent orange">50%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill orange" data-width="50"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tools-section" data-aos="fade-up" data-aos-delay="100">
+                <h4 class="tools-title">Tools & Technologies</h4>
+                <div class="tools-grid">
+                    <span class="tool-badge"><i class="bi bi-git"></i> Git</span>
+                    <span class="tool-badge"><i class="bi bi-pc-display"></i> Wireshark</span>
+                    <span class="tool-badge"><i class="bi bi-broadcast"></i> Nmap</span>
+                    <span class="tool-badge"><i class="bi bi-bug"></i> Metasploit</span>
+                    <span class="tool-badge"><i class="bi bi-shield-lock"></i> Burp Suite</span>
+                    <span class="tool-badge"><i class="bi bi-shield-check"></i> Openclaw</span>
+                    <span class="tool-badge"><i class="bi bi-eye"></i> Snort</span>
+                    <span class="tool-badge"><i class="bi bi-activity"></i> Wazuh</span>
+                    <span class="tool-badge"><i class="bi bi-code-slash"></i> Python</span>
+                    <span class="tool-badge"><i class="bi bi-terminal"></i> Bash</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="pengalaman">
+        <div class="experience-bg-animation">
+            <div class="exp-particle"></div>
+            <div class="exp-particle"></div>
+            <div class="exp-particle"></div>
+            <div class="exp-particle"></div>
+            <div class="exp-particle"></div>
+            <div class="exp-particle"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Pengalaman Pribadi</h2>
+            <div class="timeline-connector" data-aos="zoom-in" data-aos-delay="100">
+                <div class="timeline-line"></div>
+                <div class="timeline-pulse"></div>
+            </div>
+            <div class="experience-card" data-aos="fade-right" data-aos-delay="150">
+                <div class="exp-icon-badge">
+                    <i class="bi bi-server"></i>
+                </div>
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">Configuring Linux System For Server</div>
+                    </div>
+                </div>
+                <ul class="exp-duties">
+                    <li>Mengelola beberapa server Linux dalam lingkungan VM</li>
+                    <li>Mengimplementasikan security hardening sesuai CIS benchmarks</li>
+                    <li>Melakukan monitoring sistem dan troubleshooting issues</li>
+                    <li>Membuat automation scripts untuk task repetitif</li>
+                    <li>Melakukan backup dan disaster recovery planning</li>
+                </ul>
+            </div>
+            <div class="experience-card" data-aos="fade-left" data-aos-delay="250">
+                <div class="exp-icon-badge">
+                    <i class="bi bi-shield-lock"></i>
+                </div>
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">Cybersecurity Hardening</div>
+                    </div>
+                </div>
+                <ul class="exp-duties">
+                    <li>Melakukan konfigurasi firewall dengan rule yang ketat</li>
+                    <li>Melakukan patching terhadap kerentanan yang ada di sistem linux</li>
+                    <li>Melakukan basic security assessment</li>
+                    <li>Memantai anomali pada sistem linux dengan SIEM & XDR tools</li>
+                </ul>
+            </div>
+            <div class="experience-card" data-aos="fade-right" data-aos-delay="350">
+                <div class="exp-icon-badge">
+                    <i class="bi bi-cpu"></i>
+                </div>
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-title">Local Agent Setup</div>
+                    </div>
+                </div>
+                <ul class="exp-duties">
+                    <li>Mengimplementasikan agent framework di sistem lokal</li>
+                    <li>Implementasi LLM yang capable untuk melakukan coomplex task</li>
+                    <li>Melakukan konfigurasi LLM untuk mampu menggunakan tools seperti external tools</li>
+                    <li>Menkonfigurasi system rule dan system prompt untuk hasil output yang lebih baik</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="pendidikan" class="section-bg-animation">
+        <div class="section-particles">
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Pendidikan</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">Latar belakang pendidikan formal</p>
+            <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="edu-header">
+                    <div class="edu-main">
+                        <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                        <div>
+                            <div class="edu-degree">Teknik Informatika</div>
+                            <div class="edu-university">Universitas Budiluhur</div>
+                        </div>
+                    </div>
+                    <div class="edu-meta">
+                        <div class="edu-meta-item"><i class="bi bi-calendar3"></i><span>2024 - Sekarang</span></div>
+                        <div class="edu-meta-item"><i class="bi bi-geo-alt"></i><span>Jakarta</span></div>
+                    </div>
+                </div>
+                <div class="edu-header">
+                    <div class="edu-main">
+                        <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                        <div>
+                            <div class="edu-degree">Multimedia</div>
+                            <div class="edu-university">SMK Prima Unggul</div>
+                        </div>
+                    </div>
+                    <div class="edu-meta">
+                        <div class="edu-meta-item"><i class="bi bi-calendar3"></i><span>2021 - 2024</span></div>
+                        <div class="edu-meta-item"><i class="bi bi-geo-alt"></i><span>Tangerang</span></div>
+                    </div>
+                </div>
+                <div class="edu-header">
+                    <div class="edu-main">
+                        <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                        <div>
+                            <div class="edu-degree">MTs Negeri 2</div>
+                            <div class="edu-university">Tangerang</div>
+                        </div>
+                    </div>
+                    <div class="edu-meta">
+                        <div class="edu-meta-item"><i class="bi bi-calendar3"></i><span>2018 - 2021</span></div>
+                        <div class="edu-meta-item"><i class="bi bi-geo-alt"></i><span>Tangerang</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- PROJECTS -->
+    <section id="proyek" class="section-bg-animation">
+        <div class="section-particles">
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+            <div class="section-particle"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Proyek & Portfolio</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="50">Proyek-proyek yang telah saya kerjakan</p>
+            <div class="project-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="bi bi-code-slash"></i></div>
+                        <h4 class="project-title">Automated Security Hardening Script</h4>
+                    </div>
+                    <p class="project-desc">Bash script untuk mengautomasi security hardening pada server Ubuntu/Debian sesuai dengan CIS benchmarks. Mencakup konfigurasi firewall, user permissions, dan system auditing.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Bash</span>
+                        <span class="project-tag">Linux</span>
+                        <span class="project-tag">Security</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" onclick="alert('Repository akan segera tersedia!')"><i class="bi bi-github"></i> Code</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="bi bi-code-slash"></i></div>
+                        <h4 class="project-title">Network Monitoring Dashboard</h4>
+                    </div>
+                    <p class="project-desc">Dashboard monitoring untuk tracking network traffic dan mendeteksi anomali menggunakan Wireshark dan Snort. Terintegrasi dengan alert system.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Wireshark</span>
+                        <span class="project-tag">Snort</span>
+                        <span class="project-tag">Docker</span>
+                        <span class="project-tag">Linux</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" onclick="alert('Repository akan segera tersedia!')"><i class="bi bi-github"></i> Code</a>
+                        <a href="#" class="project-link" onclick="alert('Demo akan segera tersedia!')"><i class="bi bi-box-arrow-up-right"></i> Demo</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="bi bi-code-slash"></i></div>
+                        <h4 class="project-title">Vulnerability Scanner Toolkit</h4>
+                    </div>
+                    <p class="project-desc">Collection of scripts untuk automated vulnerability scanning menggunakan Nmap, OpenVAS, dan custom Python scripts. Generate laporan dalam format PDF.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Nmap</span>
+                        <span class="project-tag">OpenVAS</span>
+                        <span class="project-tag">Bash</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" onclick="alert('Repository akan segera tersedia!')"><i class="bi bi-github"></i> Code</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="bi bi-code-slash"></i></div>
+                        <h4 class="project-title">Local AI Agent Setup</h4>
+                    </div>
+                    <p class="project-desc">Implementasi dan konfigurasi Local AI Agent pada environment lokal. Termasuk custom prompt untuk mendeteksi common attack patterns.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">AI</span>
+                        <span class="project-tag">Hermes/Openclaw</span>
+                        <span class="project-tag">Machine Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link" onclick="alert('Repository akan segera tersedia!')"><i class="bi bi-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="kontak">
+        <div class="container">
+            <h2 class="contact-section-title" data-aos="fade-up">Hubungi Saya</h2>
+            <div class="contact-grid">
+                <div class="contact-info-panel" data-aos="fade-right" data-aos-delay="100">
+                    <h4 class="contact-info-panel-title">Informasi Kontak</h4>
+                    <div class="contact-detail-card">
+                        <div class="contact-detail-icon email-icon"><i class="bi bi-envelope"></i></div>
+                        <div>
+                            <div class="contact-detail-label">Email</div>
+                            <div class="contact-detail-value"><a href="mailto:ahmad.rizki@email.com">ahmad.rizki@email.com</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-detail-card">
+                        <div class="contact-detail-icon phone-icon"><i class="bi bi-telephone"></i></div>
+                        <div>
+                            <div class="contact-detail-label">Telepon</div>
+                            <div class="contact-detail-value"><a href="tel:+6281234567890">+62 812-3456-7890</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-detail-card">
+                        <div class="contact-detail-icon location-icon"><i class="bi bi-geo-alt"></i></div>
+                        <div>
+                            <div class="contact-detail-label">Lokasi</div>
+                            <div class="contact-detail-value">Jakarta, Indonesia</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-panel" data-aos="fade-left" data-aos-delay="200">
+                    <h4 class="contact-form-panel-title">Kirim Pesan</h4>
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="mb-3">
+                            <input type="text" class="form-input-custom" id="contactName" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-input-custom" id="contactEmail" placeholder="Email Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-input-custom" id="contactSubject" placeholder="Subjek" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-input-custom" id="contactMessage" rows="5" placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-send" id="submitBtn">
+                            <i class="bi bi-send"></i> Kirim Pesan
+                        </button>
+                    </form>
+                    <div class="form-success-msg" id="formSuccess">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <p>Pesan berhasil dikirim!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p class="footer-text">Dibuat dengan <span class="heart">&hearts;</span> oleh Ahmad Ahmad Irgi Dzakirah</p>
+        </div>
+    </footer>
+
+    <!-- SECURITY BADGE -->
+    <div class="security-badge" data-bs-toggle="modal" data-bs-target="#securityModal" title="Website Security Info">
+        <i class="bi bi-shield-lock-fill"></i>
+        <span>Secured</span>
+    </div>
+
+    <!-- Security Modal -->
+    <div class="modal fade security-info-modal" id="securityModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="bi bi-shield-lock-fill me-2" style="color: var(--accent-green);"></i>Website Security Features
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 16px;">Website ini dilengkapi dengan berbagai fitur keamanan:</p>
+                    <ul class="security-list" style="padding:0; margin:0;">
+                        <li><i class="bi bi-shield-check"></i> Content Security Policy (CSP) headers</li>
+                        <li><i class="bi bi-shield-check"></i> X-Content-Type-Options: nosniff</li>
+                        <li><i class="bi bi-shield-check"></i> X-XSS-Protection enabled</li>
+                        <li><i class="bi bi-shield-check"></i> X-Frame-Options: DENY</li>
+                        <li><i class="bi bi-shield-check"></i> Strict-origin referrer policy</li>
+                        <li><i class="bi bi-shield-check"></i> Input sanitization on form fields</li>
+                        <li><i class="bi bi-shield-check"></i> HTTPS enforcement ready</li>
+                        <li><i class="bi bi-shield-check"></i> External links: rel="noopener noreferrer"</li>
+                        <li><i class="bi bi-shield-check"></i> Rate limiting ready for form submissions</li>
+                    </ul>
+                </div>
+                <div class="modal-footer" style="border-top: 1px solid var(--border-color);">
+                    <button type="button" class="btn btn-sm" style="background: var(--gradient-main); color: #fff; border-radius: 8px; font-weight: 700;" data-bs-dismiss="modal">Mengerti</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- External JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
